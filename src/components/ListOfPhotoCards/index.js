@@ -5,7 +5,7 @@ import data from '../../../api/db.json'
 export const ListOfPhotoCards = () => {
   return (
     <ul>
-      {data.photos.map((val) => <PhotoCard key={val.id} src={val.src} />)}
+      {data.photos.map((val) => <PhotoCard key={val.id} {...val} />)}
     </ul>
   )
 }
