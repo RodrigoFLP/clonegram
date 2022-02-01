@@ -30,7 +30,7 @@ justify-content: center;
         ${fadeIn()}
         content: '.';
         position: absolute;
-        bottom: 0;
+        bottom: -4px;
         font-size: 40px;
     }
 }
