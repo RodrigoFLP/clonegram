@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { PlaceHolder } from '../PlaceHolder/styles'
 import { Category } from '../Category'
 import { Item, UnorderedList } from './styles'
-import { useNearScreen } from '../../hooks/useNearScreen'
 import { useOnScroll } from '../../hooks/useOnScroll'
 
 function useCategoriesData () {
@@ -32,7 +31,7 @@ const ListOfCategories = ({ refs, fixed }) => {
           </Item>)
         : categories.map(categorie =>
           <Item key={categorie.id}>
-            <Category {...categorie} />
+            <Category {...categorie} path={`/pet/${categorie.id}`} />
           </Item>)}
     </UnorderedList>
   )

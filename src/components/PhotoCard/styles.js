@@ -20,15 +20,6 @@ top:0;
 width: 100%;
 `
 
-export const Button = styled.button`
-display: flex;
-align-items: center;
-padding-top: 8px;
-& svg {
-    margin-right: 4px
-}
-`
-
 export const ContentWrapper = styled.article`
 padding: 8px;
 min-height: 200px;

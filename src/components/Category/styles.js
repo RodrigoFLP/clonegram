@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Link as RouterLink } from 'react-router-dom'
 
-export const Anchor = styled.a`
+export const Link = styled(RouterLink)`
   display: flex;
   align-items: center;
   flex-direction: column;

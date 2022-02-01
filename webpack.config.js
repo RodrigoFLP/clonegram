@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   devtool: 'eval-source-map',
   output: {
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   mode: 'development',
   plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })],

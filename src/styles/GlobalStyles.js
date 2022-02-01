@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   #app {
     overflow-x: hidden;
     min-height: 100vh;
-    padding-bottom: 10px;
+    padding-bottom: 80px;
   }
   ::-webkit-scrollbar {
     display: none;
